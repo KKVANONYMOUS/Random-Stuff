@@ -1,4 +1,4 @@
-from turtle import *
+from turtle import * #this module is use to make patterns
 speed(25)
 bgcolor('black')
 r,g,b=255,0,0
