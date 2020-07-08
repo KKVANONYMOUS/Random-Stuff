@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="vue_app" v-bind:class="{center}">
+	<div id="bag-img" v-bind:class="{burst: ended}">
+	</div><br>
+
+	<div id="health">
+		<div id="health-bar" v-bind:style="{width: health + '%'}">
+			
+		</div>
+	</div><br>
+
+	<div id="btns">
+		<button v-on:click="reset">Reset</button>
+		<button v-on:click="punched" v-show="!ended">Punch</button>
+	</div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

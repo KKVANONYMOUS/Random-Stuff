@@ -1,0 +1,25 @@
+.center{
+	display: block;
+	text-align: center;
+	justify-content: space-around;
+}
+#health{
+	margin: 0 auto;
+	width: 200px;
+	height: 20px;
+	border: 2px solid black;
+}
+#health-bar{
+	height: 20px;
+	background: red;
+	
+}
+#bag-img{
+	margin: 0 auto;
+	width: 200px;
+	height: 510px;
+	background-image: url('assets/img/bag.png');
+}
+#bag-img.burst{
+	background-image: url('assets/img/bag-burst.png');
+}
