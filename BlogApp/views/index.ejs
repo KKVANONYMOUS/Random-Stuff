@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+
+<div class="container">
+    <div class="row mb-2">
+        <% blogs.forEach((blog)=>{  %>
+
+        <div class="col-md-6 col-lg-6 col-sm-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0 text-success"><%= blog.title  %> </h3>
+                    <div class="mb-1 text-muted"><%= blog.created.toDateString()  %></div>
+                    <p class="card-text mb-auto"><%= blog.description.slice(0,100)  %>...</p>
+                    <a href="/blogs/<%= blog._id %> " class="btn btn-outline-primary">Continue reading</a>
+                    
+                
+                </div>
+                <div class="col-auto d-none d-lg-block p-4">
+                    <img width="200" height="200" src="<%= blog.img  %>">
+                </div>
+            </div>
+        </div>
+
+
+        <% }) %>
+    </div>
+</div>
+
+<%- include('partials/footer') %>
